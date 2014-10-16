@@ -1,8 +1,12 @@
 body {
-    background-color: rgba(52, 73, 94,1.0);
-    width: 90%;
-    margin: 0 auto;
+    background-image: url('http://40.media.tumblr.com/tumblr_m0re94pbrC1r8sc1qo1_1280.jpg');
+    no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #content {
@@ -14,31 +18,40 @@ body {
 }
 
 h1 {
+    color: white;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.column1, .column2, .column3 {
-    width: 31.3%;
+.column1, .column2 {     
+    width: 20%;
     float: left;
     margin: 1%;
 }
 
+
 .column3 {
-    margin-right: 0%;
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+}
+
+.column3 {
+    margin-right: 1%;
 }
 
 li {
     display: inline;
     padding: 0.5em;
     text-align: left;
-    background-color: rgba(243, 156, 18,1.0);
+    background-color: rgba(236, 240, 241,0.5);
+    margin: 2px;
     color: rgba(52, 73, 94,1.0);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400; 
 }
 
 li.active {
-    background-color: rgba(241, 196, 15,1.0);
+    background-color: rgba(236, 240, 241,0.9);
 }
 
 li a {
@@ -50,12 +63,12 @@ li a {
 }
 
 #nav, #footer {
-    background-color: rgba(236, 240, 241,1.0);
     padding: 0.5em 0;
+    color: white;
 }
 
 #banner, .article {
     height: 10em;
     margin-bottom: 1em;
-    background-color: rgba(236, 240, 241,1.0);
+    background-color: rgba(26, 188, 156,0.2);
 }
