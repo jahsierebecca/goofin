@@ -31,15 +31,105 @@ h1 {
     
 }
 
-.column2 {
-    background-color: rgba(155, 89, 182,1.0);
+#banner p {
+    line-height: 2em;
+    vertical-align: baseline;
+    vertical-align: middle;
 }
 
-.column2:hover {
-	-webkit-transform: rotate(2turn);
+span { 
+    display:inline-block; vertical-align:middle 
+}
+
+#banner:hover {
+ 	background-color: rgba(241, 196, 15,0.8);
+}
+
+.column1, column2, column3 {
+    background-color: rgba(155, 89, 182,1.0);
+    margin: 2em;
+	width: 150px;
+	background: url('mike-transparent.png') no-repeat 0 0;
+	background-size: 150px;
+    float: right;
+}
+
+/*start roate effect     */
+.column2 {
+    padding: 2%;
+	margin: auto;
+	width: 150px;
+	background: url('img/click.png') no-repeat 0 0;
+	background-size: 150px;
+}
+.click {
+	display: block;
+	width: 100%;
+	transition: 1s ease-in-out;
+}
+
+.column2:hover .click {
+	-webkit-transform: rotate(6turn);
 	-webkit-transform-origin: 100% 100%;
 }
+/* end rotate effect    */
 
+/* start spin effect    */
+.wrap {
+	cursor: pointer;
+    margin: 1%;
+    box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+    line-height: 300%;
+}
+
+.wrap div {
+	width: 100%;
+    height: 3em;
+	border-radius: 10px;
+	box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+	text-align: center;
+}
+
+.side-a {
+    background: #498FBC;
+}
+
+.side-a a {
+	color: red;
+}
+
+.side-b {
+	background: #33363B;
+}
+
+.side-b a{
+	color: pink;
+}
+
+.wrap {
+	transition: -webkit-transform 1s ease-in;
+	-webkit-transform-style: preserve-3d;
+}
+
+.wrap div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+.side-a {
+	z-index: 100;
+}
+
+.side-b {
+	-webkit-transform: rotateY(-580deg);
+}
+
+.wrap:hover {
+	-webkit-transform: rotateY(-7turn);
+}
+
+/* end spin effect    */
+/* Start last effect    */
 
 .column3 { 
     background-color: rgba(26, 188, 156,1);
@@ -68,6 +158,8 @@ h1 {
 	-webkit-transform: rotate(2turn);
 	-webkit-transform-origin: 100% 100%;
 }
+
+/* end last effect    */
 
 li {
     display: inline;
